@@ -1,15 +1,18 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="success">
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
     <ion-title>
-      Agregar Lampara
+      Agregar elemento
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content padding color="success">
+
+  <ion-card color="medium">
+    <ion-card-content >
     <ion-item>
         <ion-label>Tipo de Elemento</ion-label>
         <ion-select [(ngModel)]="elemento" placeholder="Selecciona una" cancel-text="Cancelar">
@@ -39,8 +42,10 @@
       </ion-select>
   </ion-item> 
 
-    <ion-button   [disabled]="!elemento || !nombre || (elemento == 'dispositivo' && !tipo  && !sala)" expand ='block' color ='secondary' (click)="agregar(elemento, nombre, tipo, sala)">
+    <ion-button   [disabled]="!elemento || !nombre || (elemento == 'dispositivo' && !tipo  && !sala)" expand ='block' color ='primary' (click)="agregar(elemento, nombre, tipo, sala)">
       <ion-icon name='add' slot='start'></ion-icon>
       Agregar
     </ion-button>
+  </ion-card-content>
+  </ion-card>
 </ion-content>

@@ -4,20 +4,31 @@
 
 ion-card.carta{
     cursor: pointer;
+    text-align: center;
     outline: none;
-    color: black;
-    background-color: #FFF;
+    color: white;
+    background: rgb(2,0,36);
+    background: linear-gradient(190deg, rgba(2,0,36,1) 0%, rgba(55,55,203,1) 0%, rgba(2,159,220,1) 60%, rgba(0,212,255,1) 100%);
+
     border: none;
 }
 
-ion-card.carta :hover {
-    background-color: #f7f7f7
+ion-card.carta2{
+    cursor: pointer;
+    text-align: center;
+    outline: none;
+    color: white;
+    background: rgb(131,58,180);
+    background: linear-gradient(191deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 1%, rgba(252,176,69,1) 100%);
+    border: none;
 }
 
+
 ion-card.carta:active{
-    background-color: #FFF;
+    //background-color: #FFF;
     transform: translateY(4px);
 }
+
 
 .icono{
     font-size: 45px;

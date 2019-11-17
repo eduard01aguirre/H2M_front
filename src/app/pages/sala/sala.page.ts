@@ -37,6 +37,7 @@ export class SalaPage implements OnInit {
                
 
     let id = route.snapshot.params[('name')];
+    console.log(route.snapshot.params[('name')]);
     this.usuario.get('/elementos/listar/sala/sensor/'+ id).subscribe((data: any) => {
       this.sensores = data.element;
       console.log(data);
